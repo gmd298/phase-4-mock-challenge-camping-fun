@@ -1,6 +1,6 @@
 class Signup < ApplicationRecord
   belongs_to :camper
-  belongs_to :activities
+  belongs_to :activity
 
   # validates :time, numericality: {:in 0..23}
   validates :time, inclusion: 0..23

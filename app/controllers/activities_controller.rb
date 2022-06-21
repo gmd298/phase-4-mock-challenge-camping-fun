@@ -17,7 +17,7 @@ class ActivitiesController < ApplicationController
   private
 
   def does_not_exist
-    render json: {error: "Activity does not exist"}, status: :not_found
+    render json: {error: "Activity not found"}, status: :not_found
   end
 
 

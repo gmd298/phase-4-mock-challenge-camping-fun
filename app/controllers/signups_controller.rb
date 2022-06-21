@@ -1,7 +1,7 @@
 class SignupsController < ApplicationController
   rescue_from ActiveRecord::RecordInvalid, with: :unprocessable_entity
 
-  def
+  def create
     signup = Signup.create!(params_signup)
     render json: signup.activity, status: :created
   end
